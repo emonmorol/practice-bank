@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl font-semibold uppercase text-center mt-16">Money <span class="text-cyan-600">Management</span></h1>
+    </header>
+
+    <main>
+        <section class="grid grid-cols-3 gap-8 mx-56">
+            <div class="bg-green-200 mt-10 p-10 rounded-2xl">
+                <p class="text-3xl">Deposit Amount</p>
+                <p class="text-5xl">$<span id="total-deposit">00</span></p>
+            </div>
+            <div class="bg-lime-200 mt-10 p-10 rounded-2xl">
+                <p class="text-3xl">Withdraw Amount</p>
+                <p class="text-5xl">$<span id="total-withdraw">00</span></p>
+            </div>
+            <div class="bg-cyan-200 mt-10 p-10 rounded-2xl">
+                <p class="text-3xl">Total Balance</p>
+                <p class="text-5xl">$<span id="total-balance">1000</span></p>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-8 mx-56">
+            <div class="bg-green-200 mt-10 p-10 rounded-2xl">
+                <p class="text-3xl text-center">Please <span class="text-red-600 uppercase">Doposit</span> Your Money!!</p> <br>
+                <input id="deposit-input" class="mb-2 px-5 py-3 w-full rounded-2xl" type="text" placeholder="$ Deposite Your Money">
+                <button id="deposit-button" class="bg-blue-600 px-8 py-1 text-white font-semibold text-center mx-auto w-full rounded-2xl uppercase">Deposit</button>
+            </div>
+            <div class="bg-green-200 mt-10 p-10 rounded-2xl">
+                <p class="text-3xl text-center">Please <span class="text-blue-600 uppercase">Withdraw</span> Your Money!!</p> <br>
+                <input id="withdraw-input" class="mb-2 px-5 py-3 w-full rounded-2xl" type="text" placeholder="$ Withdraw Your Money">
+                <button id="withdraw-button" class="bg-blue-600 px-8 py-1 text-white font-semibold text-center mx-auto w-full rounded-2xl uppercase">Withdraw</button>
+            </div>
+        </section>
+    </main>
+    <script src="JS/money.js"></script>
+</body>
+</html>
